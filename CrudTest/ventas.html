@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventas</title>
+    <script src="js/ventas.js" defer></script>
+</head>
+<body>
+    <h2>Buscar Producto</h2>
+    <input type="text" id="search" placeholder="Buscar por ID o Nombre" required>
+    <button id="searchButton">Buscar</button>
+
+    <h2>Productos Encontrados</h2>
+    <table border="1" id="productsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productsTableBody">
+            <!-- Los productos encontrados se cargarán aquí -->
+        </tbody>
+    </table>
+
+    <h2>Productos Seleccionados para la Venta</h2>
+    <table border="1" id="selectedProductsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="selectedProductsTableBody">
+            <!-- Productos seleccionados para la venta se cargarán aquí -->
+        </tbody>
+    </table>
+
+    <button id="completeSaleButton">Realizar Compra</button>
+
+    <div id="message"></div>
+
+
+    <script src="js/ventas.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD con PHP y MariaDB</title>
+</head>
+
+<body>
+    <h2>Añadir Producto</h2>
+    <form id="productForm">
+        <input type="text" id="product" placeholder="Producto" required>
+        <input type="number" min="0.01" step="any" id="price" placeholder="Precio" required>
+        <input type="number" id="stock" placeholder="Stock" required>
+        <button type="submit">Añadir</button>
+    </form>
+
+    <h2>Lista de Productos</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            <!-- Los datos se cargarán aquí dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="js/crud.js" defer></script>
+</body>
+</html>
